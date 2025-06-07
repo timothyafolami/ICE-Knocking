@@ -3,13 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # %% 1. Time Setup
-start_date = pd.Timestamp('2024-01-01 00:00:00')
-end_date = pd.Timestamp('2025-04-01 00:00:00')
+start_date = pd.Timestamp('2025-01-01 00:00:00')
+end_date = pd.Timestamp('2025-05-01 00:00:00')
 
-# Generate hourly timestamps
-time_stamp = pd.date_range(start=start_date, end=end_date - pd.Timedelta(hours=1), freq='H')
-N = len(time_stamp)  # Should be 744 (1/60th of minute data)
-t_sec = np.arange(N) * 3600  # Time vector in seconds, multiplied by 3600 for hourly intervals
+# Generate minute timestamps
+time_stamp = pd.date_range(start=start_date, end=end_date - pd.Timedelta(minutes=1), freq='T')
+N = len(time_stamp)  # Should be 44640 (minute data)
+t_sec = np.arange(N) * 60  # Time vector in seconds, multiplied by 60 for minute intervals
 
 # %% 2. Engine Operational Parameters
 # RPM [800 – 4400 rpm]
@@ -24,7 +24,7 @@ ignition_timing = np.full(N, 10.0)
 def burn_rate(theta, theta0, delta_theta, a, n):
     return 1 - np.exp(-a * ((theta - theta0) / delta_theta) ** n)
 
-# Simulated crank angle between 10°–50° each hour
+# Simulated crank angle between 10°–50° each minute
 theta = 10 + 40 * np.random.rand(N)
 
 # Peak pressure contribution (arb. units)
@@ -82,12 +82,12 @@ df = pd.DataFrame({
 })
 
 # %% 8. Write Data to CSV
-csv_filename = 'data/engine_knock_data_hourly.csv'
+csv_filename = 'data/engine_knock_data_minute.csv'
 df.to_csv(csv_filename, index=False)
 print(f'CSV file "{csv_filename}" created successfully.')
 
 # %% 9. Generate Diagnostic Plots
-sample_range = slice(0, 24)  # First day (24 hourly samples)
+sample_range = slice(0, 1440)  # First day (1440 minute samples)
 
 plt.figure(figsize=(12, 8))
 
