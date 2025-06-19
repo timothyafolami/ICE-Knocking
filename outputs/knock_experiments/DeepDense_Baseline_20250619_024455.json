@@ -1,0 +1,39 @@
+{
+  "experiment_id": "20250619_024455",
+  "experiment_name": "DeepDense_Baseline",
+  "timestamp": "2025-06-19T02:45:19.324887",
+  "config": {
+    "dropout_rate": 0.3,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 100,
+    "loss": "binary_crossentropy"
+  },
+  "results": {
+    "accuracy": 0.8754960317460317,
+    "precision": 0.06640625,
+    "recall": 0.5862068965517241,
+    "specificity": 0.879718168092602,
+    "f1_score": 0.11929824561403508,
+    "roc_auc": 0.8657480519931278,
+    "avg_precision": 0.2784135806710317,
+    "confusion_matrix": [
+      [
+        1748,
+        239
+      ],
+      [
+        12,
+        17
+      ]
+    ],
+    "tp": 17,
+    "fp": 239,
+    "tn": 1748,
+    "fn": 12,
+    "training_epochs": 26,
+    "best_val_auc": 0.8655831813812256,
+    "model_params": 201473
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "experiment_id": "20250619_024455",
+  "experiment_name": "Residual_Baseline",
+  "timestamp": "2025-06-19T02:46:05.186229",
+  "config": {
+    "dropout_rate": 0.25,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 100,
+    "loss": "binary_crossentropy"
+  },
+  "results": {
+    "accuracy": 0.90625,
+    "precision": 0.08333333333333333,
+    "recall": 0.5517241379310345,
+    "specificity": 0.9114242576748868,
+    "f1_score": 0.14479638009049775,
+    "roc_auc": 0.8588584419415859,
+    "avg_precision": 0.2635824723631235,
+    "confusion_matrix": [
+      [
+        1811,
+        176
+      ],
+      [
+        13,
+        16
+      ]
+    ],
+    "tp": 16,
+    "fp": 176,
+    "tn": 1811,
+    "fn": 13,
+    "training_epochs": 27,
+    "best_val_auc": 0.8603770136833191,
+    "model_params": 223233
+  }
+}

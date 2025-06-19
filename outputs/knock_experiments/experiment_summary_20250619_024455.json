@@ -1,0 +1,197 @@
+[
+  {
+    "experiment_id": "20250619_024455",
+    "experiment_name": "DeepDense_Baseline",
+    "timestamp": "2025-06-19T02:45:19.324887",
+    "config": {
+      "dropout_rate": 0.3,
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "epochs": 100,
+      "loss": "binary_crossentropy"
+    },
+    "results": {
+      "accuracy": 0.8754960317460317,
+      "precision": 0.06640625,
+      "recall": 0.5862068965517241,
+      "specificity": 0.879718168092602,
+      "f1_score": 0.11929824561403508,
+      "roc_auc": 0.8657480519931278,
+      "avg_precision": 0.2784135806710317,
+      "confusion_matrix": [
+        [
+          1748,
+          239
+        ],
+        [
+          12,
+          17
+        ]
+      ],
+      "tp": 17,
+      "fp": 239,
+      "tn": 1748,
+      "fn": 12,
+      "training_epochs": 26,
+      "best_val_auc": 0.8655831813812256,
+      "model_params": 201473
+    }
+  },
+  {
+    "experiment_id": "20250619_024455",
+    "experiment_name": "DeepDense_LowDropout",
+    "timestamp": "2025-06-19T02:45:42.065422",
+    "config": {
+      "dropout_rate": 0.15,
+      "optimizer": "adam",
+      "learning_rate": 0.0008,
+      "batch_size": 24,
+      "epochs": 120,
+      "loss": "binary_crossentropy"
+    },
+    "results": {
+      "accuracy": 0.9221230158730159,
+      "precision": 0.0949367088607595,
+      "recall": 0.5172413793103449,
+      "specificity": 0.9280322093608455,
+      "f1_score": 0.16042780748663102,
+      "roc_auc": 0.8690279922947435,
+      "avg_precision": 0.28064351609647537,
+      "confusion_matrix": [
+        [
+          1844,
+          143
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "tp": 15,
+      "fp": 143,
+      "tn": 1844,
+      "fn": 14,
+      "training_epochs": 24,
+      "best_val_auc": 0.8670409917831421,
+      "model_params": 201473
+    }
+  },
+  {
+    "experiment_id": "20250619_024455",
+    "experiment_name": "Residual_Baseline",
+    "timestamp": "2025-06-19T02:46:05.186229",
+    "config": {
+      "dropout_rate": 0.25,
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "epochs": 100,
+      "loss": "binary_crossentropy"
+    },
+    "results": {
+      "accuracy": 0.90625,
+      "precision": 0.08333333333333333,
+      "recall": 0.5517241379310345,
+      "specificity": 0.9114242576748868,
+      "f1_score": 0.14479638009049775,
+      "roc_auc": 0.8588584419415859,
+      "avg_precision": 0.2635824723631235,
+      "confusion_matrix": [
+        [
+          1811,
+          176
+        ],
+        [
+          13,
+          16
+        ]
+      ],
+      "tp": 16,
+      "fp": 176,
+      "tn": 1811,
+      "fn": 13,
+      "training_epochs": 27,
+      "best_val_auc": 0.8603770136833191,
+      "model_params": 223233
+    }
+  },
+  {
+    "experiment_id": "20250619_024455",
+    "experiment_name": "Residual_AdamW",
+    "timestamp": "2025-06-19T02:46:31.278773",
+    "config": {
+      "dropout_rate": 0.2,
+      "optimizer": "adamw",
+      "learning_rate": 0.0008,
+      "batch_size": 28,
+      "epochs": 120,
+      "loss": "binary_crossentropy"
+    },
+    "results": {
+      "accuracy": 0.941468253968254,
+      "precision": 0.11304347826086956,
+      "recall": 0.4482758620689655,
+      "specificity": 0.9486663311524912,
+      "f1_score": 0.18055555555555555,
+      "roc_auc": 0.862398694965552,
+      "avg_precision": 0.2619580250076149,
+      "confusion_matrix": [
+        [
+          1885,
+          102
+        ],
+        [
+          16,
+          13
+        ]
+      ],
+      "tp": 13,
+      "fp": 102,
+      "tn": 1885,
+      "fn": 16,
+      "training_epochs": 28,
+      "best_val_auc": 0.8634486794471741,
+      "model_params": 223233
+    }
+  },
+  {
+    "experiment_id": "20250619_024455",
+    "experiment_name": "Ensemble_Baseline",
+    "timestamp": "2025-06-19T02:46:40.481895",
+    "config": {
+      "dropout_rate": 0.25,
+      "optimizer": "adam",
+      "learning_rate": 0.0015,
+      "batch_size": 32,
+      "epochs": 100,
+      "loss": "binary_crossentropy"
+    },
+    "results": {
+      "accuracy": 0.8308531746031746,
+      "precision": 0.06666666666666667,
+      "recall": 0.8275862068965517,
+      "specificity": 0.8309008555611475,
+      "f1_score": 0.12339331619537275,
+      "roc_auc": 0.872273224233379,
+      "avg_precision": 0.27459849982098694,
+      "confusion_matrix": [
+        [
+          1651,
+          336
+        ],
+        [
+          5,
+          24
+        ]
+      ],
+      "tp": 24,
+      "fp": 336,
+      "tn": 1651,
+      "fn": 5,
+      "training_epochs": 22,
+      "best_val_auc": 0.8755010962486267,
+      "model_params": 30452
+    }
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "inference_timestamp": "2025-06-19T03:09:37.189378",
+  "model_info": {
+    "experiment_id": "20250619_024455",
+    "experiment_name": "Ensemble_Baseline",
+    "timestamp": "2025-06-19T02:46:40.481895",
+    "config": {
+      "dropout_rate": 0.25,
+      "optimizer": "adam",
+      "learning_rate": 0.0015,
+      "batch_size": 32,
+      "epochs": 100,
+      "loss": "binary_crossentropy"
+    },
+    "results": {
+      "accuracy": 0.8308531746031746,
+      "precision": 0.06666666666666667,
+      "recall": 0.8275862068965517,
+      "specificity": 0.8309008555611475,
+      "f1_score": 0.12339331619537275,
+      "roc_auc": 0.872273224233379,
+      "avg_precision": 0.27459849982098694,
+      "confusion_matrix": [
+        [
+          1651,
+          336
+        ],
+        [
+          5,
+          24
+        ]
+      ],
+      "tp": 24,
+      "fp": 336,
+      "tn": 1651,
+      "fn": 5,
+      "training_epochs": 22,
+      "best_val_auc": 0.8755010962486267,
+      "model_params": 30452
+    }
+  },
+  "analysis_results": {
+    "total_samples": 1440,
+    "predicted_knocks": "231",
+    "knock_rate_percent": 16.041666666666668,
+    "avg_confidence": 0.1508757770061493,
+    "max_confidence": 0.9985329508781433,
+    "min_confidence": 2.205858759540824e-11,
+    "knock_timing": {
+      "first_knock": "2025-01-08 00:25:00",
+      "last_knock": "2025-01-08 23:57:00",
+      "high_confidence_knocks": 113
+    }
+  }
+}

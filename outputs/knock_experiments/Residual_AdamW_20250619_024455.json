@@ -1,0 +1,39 @@
+{
+  "experiment_id": "20250619_024455",
+  "experiment_name": "Residual_AdamW",
+  "timestamp": "2025-06-19T02:46:31.278773",
+  "config": {
+    "dropout_rate": 0.2,
+    "optimizer": "adamw",
+    "learning_rate": 0.0008,
+    "batch_size": 28,
+    "epochs": 120,
+    "loss": "binary_crossentropy"
+  },
+  "results": {
+    "accuracy": 0.941468253968254,
+    "precision": 0.11304347826086956,
+    "recall": 0.4482758620689655,
+    "specificity": 0.9486663311524912,
+    "f1_score": 0.18055555555555555,
+    "roc_auc": 0.862398694965552,
+    "avg_precision": 0.2619580250076149,
+    "confusion_matrix": [
+      [
+        1885,
+        102
+      ],
+      [
+        16,
+        13
+      ]
+    ],
+    "tp": 13,
+    "fp": 102,
+    "tn": 1885,
+    "fn": 16,
+    "training_epochs": 28,
+    "best_val_auc": 0.8634486794471741,
+    "model_params": 223233
+  }
+}

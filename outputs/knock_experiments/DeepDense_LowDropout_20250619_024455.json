@@ -1,0 +1,39 @@
+{
+  "experiment_id": "20250619_024455",
+  "experiment_name": "DeepDense_LowDropout",
+  "timestamp": "2025-06-19T02:45:42.065422",
+  "config": {
+    "dropout_rate": 0.15,
+    "optimizer": "adam",
+    "learning_rate": 0.0008,
+    "batch_size": 24,
+    "epochs": 120,
+    "loss": "binary_crossentropy"
+  },
+  "results": {
+    "accuracy": 0.9221230158730159,
+    "precision": 0.0949367088607595,
+    "recall": 0.5172413793103449,
+    "specificity": 0.9280322093608455,
+    "f1_score": 0.16042780748663102,
+    "roc_auc": 0.8690279922947435,
+    "avg_precision": 0.28064351609647537,
+    "confusion_matrix": [
+      [
+        1844,
+        143
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "tp": 15,
+    "fp": 143,
+    "tn": 1844,
+    "fn": 14,
+    "training_epochs": 24,
+    "best_val_auc": 0.8670409917831421,
+    "model_params": 201473
+  }
+}
