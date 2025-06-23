@@ -1,17 +1,3 @@
-"""
-Realistic Engine Data Generator for Knock Detection Research
-==========================================================
-
-This script generates realistic second-by-second engine data for one week based on:
-- Automotive engineering standards and real-world operating conditions
-- Physics-based sensor correlations and combustion modeling
-- Realistic knock occurrence rates (<0.5% under normal conditions)
-- WLTP/FTP75 driving cycle patterns for realistic load variations
-
-Author: Generated based on automotive engineering research
-Date: 2025-01-18
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

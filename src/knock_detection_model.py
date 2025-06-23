@@ -1,23 +1,3 @@
-"""
-Engine Knock Detection Model
-============================
-
-This model trains on minute-based engine data to detect knock events using all engine 
-parameters except the knock variable itself. Designed to work with forecasted data
-from the engine parameter forecasting system.
-
-Key Features:
-- Trains on original minute-based data (10,080 data points)
-- Uses all 9 engine parameters as features
-- Handles imbalanced knock data (only 0.25% positive cases)
-- Multiple model approaches: Random Forest, XGBoost, Neural Network
-- Optimized for minute-based temporal resolution
-- Ready for deployment with forecasted parameter inputs
-
-Author: Generated for automotive knock detection
-Date: 2025-01-19
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

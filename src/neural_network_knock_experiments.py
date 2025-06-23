@@ -1,21 +1,3 @@
-"""
-Neural Network Knock Detection Experiments
-==========================================
-
-Focused experimentation on Neural Network architectures for knock detection.
-Tests multiple architectures and logs performance to find the optimal configuration.
-
-Key Features:
-- Multiple NN architectures optimized for imbalanced knock detection
-- Comprehensive performance logging and comparison
-- Advanced techniques: focal loss, ensemble, attention mechanisms
-- Hyperparameter optimization for each architecture
-- Best model selection based on multiple metrics
-
-Author: Generated for knock detection optimization
-Date: 2025-01-19
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

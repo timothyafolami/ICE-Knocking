@@ -1,21 +1,3 @@
-"""
-Realistic Engine Data Generator - Minute-Based
-==============================================
-
-Direct minute-based engine data generation for efficient forecasting.
-Generates realistic 1-minute interval data without need for resampling.
-
-Key Features:
-- Native minute-based temporal resolution
-- 60x fewer data points than second-based
-- Maintains all essential engine dynamics
-- Optimized for forecasting workflows
-- Physics-based parameter relationships
-
-Author: Generated for efficient automotive data generation
-Date: 2025-01-18
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

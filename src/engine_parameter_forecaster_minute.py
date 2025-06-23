@@ -1,20 +1,3 @@
-"""
-Engine Parameter Forecasting System - Minute-Based
-==================================================
-
-Memory and time efficient version using minute-based data instead of second-based.
-This reduces data points by 60x while maintaining meaningful temporal patterns.
-
-Key Changes:
-- 1-minute intervals instead of 1-second
-- 1440 points per day instead of 86,400
-- Much faster training and inference
-- Still captures essential engine dynamics
-
-Author: Generated for efficient automotive forecasting
-Date: 2025-01-18
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

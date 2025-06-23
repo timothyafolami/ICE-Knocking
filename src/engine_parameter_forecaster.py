@@ -1,17 +1,3 @@
-"""
-Engine Parameter Forecasting System
-===================================
-
-This system implements a hybrid ML + Physics approach for engine parameter forecasting:
-1. Primary Parameters: RPM, Load, Temperature (predicted with ML)
-2. Derived Parameters: All others (calculated using physics/engineering relationships)
-
-This approach ensures physics consistency while leveraging ML for temporal pattern recognition.
-
-Author: Generated for automotive predictive maintenance
-Date: 2025-01-18
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

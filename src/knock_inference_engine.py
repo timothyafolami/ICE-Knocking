@@ -1,21 +1,3 @@
-"""
-Knock Detection Inference Engine
-================================
-
-Production-ready inference script for detecting knock events using the best trained model.
-Loads the optimal Neural Network model and predicts knocks on engine data.
-
-Key Features:
-- Load best performing model (Ensemble Network)
-- Real-time knock detection on engine data
-- Comprehensive prediction analysis and statistics
-- Confidence scoring for each prediction
-- Detailed reporting of detected knock events
-
-Author: Generated for knock detection inference
-Date: 2025-01-19
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
