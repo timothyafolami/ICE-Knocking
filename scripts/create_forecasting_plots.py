@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Forecasting and Inference Visualization Script
-Creates detailed plots for forecasting performance and inference analysis
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

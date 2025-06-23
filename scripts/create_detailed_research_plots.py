@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Detailed Research Paper Visualization Script
-Creates comprehensive, publication-ready plots for all sections
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

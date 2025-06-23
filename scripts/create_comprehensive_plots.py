@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Comprehensive Visualization Script for ICE Engine Knock Detection Research Paper
-Creates detailed plots for all sections of the research paper
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

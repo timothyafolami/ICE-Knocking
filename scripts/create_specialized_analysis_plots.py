@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""
-Specialized Analysis Plots for Research Paper
-============================================
-
-Creates additional detailed plots for:
-- Training convergence analysis
-- Feature importance and correlation analysis
-- Forecasting system performance
-- Time series analysis and temporal patterns
-- Production deployment analysis
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

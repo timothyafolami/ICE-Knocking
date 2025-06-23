@@ -1,21 +1,3 @@
-#!/usr/bin/env python3
-"""
-Minute Averaging Analysis Script
-===============================
-
-This script analyzes the exact impact of 60-second averaging on engine data,
-particularly focusing on knock events and parameter correlations.
-
-Shows:
-1. Exact knock event statistics before/after averaging
-2. Parameter value distributions and ranges
-3. Correlation preservation analysis
-4. Visual comparisons between second and minute data
-
-Author: Generated for data analysis verification
-Date: 2025-01-18
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
